@@ -1,214 +1,54 @@
-# ERP-ventas-inventario-facturaci-n
-Ingeniera en Desarrollo de Software | Desarrollo Web | Automatización de Procesos | Soluciones Tecnológicas para Empresas y Sector Salud.
-<div align="center">
+# Folio ERP — Ventas, Inventario y Facturación
 
-# 🚀 AG ERP Enterprise
-## Sistema Empresarial de Ventas, Inventario y Facturación
+Proyecto de portafolio desarrollado por **AG Soluciones**. Es un ERP empresarial de demostración, 100% funcional en el navegador, pensado para mostrar capacidad de diseño y desarrollo de sistemas de gestión a clientes potenciales.
 
-<img src="docs/logo-ag.png" width="180">
+**[Ver demo en vivo →](#)** *(pega aquí tu enlace de GitHub Pages una vez publicado)*
 
-### Desarrollado por
+![Estado](https://img.shields.io/badge/estado-demo funcional-2F6F4E)
+![Licencia](https://img.shields.io/badge/uso-portafolio-C9A227)
 
-# AG Soluciones de Ingeniería en Software
+## Vista general
 
-### Transformamos procesos empresariales en soluciones tecnológicas.
+Folio ERP simula la operación diaria de una pequeña o mediana empresa: registrar ventas, controlar inventario y generar facturas con folio y estado, todo desde un panel con diseño propio (paleta verde ledger + acentos en latón, tipografía Space Grotesk / Inter / IBM Plex Mono).
 
+## Módulos incluidos
 
-# 📌 Descripción
+- **Panel general** — KPIs de ingresos, facturas pendientes, catálogo y clientes; gráfica de ventas de los últimos 7 días; alertas de existencias bajo mínimo; ventas recientes.
+- **Ventas** — historial de ventas, búsqueda por folio/cliente, alta de nuevas ventas con múltiples artículos que descuentan inventario automáticamente y generan una factura.
+- **Inventario** — catálogo de productos con SKU, categoría, precio, existencia y mínimo; alta, edición y eliminación; filtro por categoría y alerta visual de bajo stock.
+- **Facturación** — folios fiscales generados desde cada venta, con fecha de emisión/vencimiento, cambio de estado (pagada / pendiente / vencida) y vista de factura lista para imprimir o guardar como PDF.
+- **Clientes** — directorio con historial de compras y monto total por cliente.
 
-**AG ERP Enterprise** es una plataforma empresarial desarrollada para optimizar la administración de pequeñas y medianas empresas.
+## Cómo funciona la persistencia
 
-Integra en un solo sistema:
+No hay backend: todos los datos se guardan en `localStorage` del navegador, con datos de demostración precargados la primera vez que se abre la aplicación. El botón **"Restablecer demo"** en la barra lateral regresa todo a su estado inicial en cualquier momento — ideal para que cada visita de un cliente potencial empiece limpia.
 
-- Ventas
-- Inventario
-- Facturación
-- Compras
-- Clientes
-- Proveedores
-- Reportes
-- Dashboard Gerencial
+## Stack técnico
 
-Su arquitectura permite crecer conforme las necesidades de la empresa, facilitando la automatización de procesos y la toma de decisiones.
+- HTML5, CSS3 (variables de diseño / sin frameworks) y JavaScript vanilla — sin build step, se publica directo en GitHub Pages.
+- Gráficas construidas a mano en SVG (sin dependencias externas de charting).
+- Tipografías: [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk), [Inter](https://fonts.google.com/specimen/Inter) y [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono) vía Google Fonts.
 
----
+## Publicarlo en GitHub Pages
 
-# 🎯 Objetivos
+1. Crea un repositorio y sube todo el contenido de esta carpeta.
+2. En **Settings → Pages**, selecciona la rama principal y la carpeta raíz (`/`).
+3. Guarda; GitHub te dará una URL pública en un par de minutos.
+4. Pega esa URL en la sección "Ver demo en vivo" de este README y en tu portafolio.
 
-✔ Automatizar procesos administrativos.
+## Estructura del proyecto
 
-✔ Reducir tiempos operativos.
+```
+erp-ag-soluciones/
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   ├── data.js      # capa de datos y localStorage
+│   └── app.js        # enrutamiento y lógica de la interfaz
+└── README.md
+```
 
-✔ Centralizar la información.
+## Sobre AG Soluciones
 
-✔ Controlar inventarios en tiempo real.
-
-✔ Incrementar la productividad.
-
-✔ Mejorar la atención al cliente.
-
----
-
-# 🚀 Funcionalidades
-
-## 📊 Dashboard Ejecutivo
-
-- Indicadores en tiempo real
-- Ventas del día
-- Productos más vendidos
-- Inventario crítico
-- Clientes nuevos
-- Gráficas dinámicas
-
----
-
-## 🛒 Ventas
-
-- Punto de venta (POS)
-- Cotizaciones
-- Facturación
-- Devoluciones
-- Historial de ventas
-
----
-
-## 📦 Inventario
-
-- Productos
-- Categorías
-- Marcas
-- Existencias
-- Kardex
-- Alertas de stock
-
----
-
-## 👥 Clientes
-
-- Registro
-- Historial de compras
-- Créditos
-- Estados de cuenta
-
----
-
-## 🚚 Proveedores
-
-- Registro
-- Compras
-- Pagos
-- Historial
-
----
-
-## 💳 Facturación
-
-- CFDI (preparado)
-- Reportes fiscales
-- Impresión PDF
-
----
-
-## 📈 Reportes
-
-- Ventas
-- Inventario
-- Utilidades
-- Productos
-- Clientes
-- Compras
-
-
-
-# 💻 Tecnologías
-
-- Laravel 12
-- PHP 8.2
-- MySQL
-- Bootstrap 5
-- JavaScript
-- Chart.js
-- Docker
-- Composer
-- Blade
-- Eloquent ORM
-
----
-
-# 🔒 Seguridad
-
-- Login seguro
-- Roles y permisos
-- Autenticación
-- Protección CSRF
-- Validación de formularios
-- Hash de contraseñas
-- SQL Injection Protection
-
----
-
-# 📊 Beneficios
-
-✅ Incrementa la productividad.
-
-✅ Reduce errores administrativos.
-
-✅ Información centralizada.
-
-✅ Reportes en tiempo real.
-
-✅ Escalable.
-
-✅ Diseño moderno.
-
-✅ Compatible con dispositivos móviles.
-
-
-
-# 🌎 ¿Necesitas un sistema como este?
-
-En **AG Soluciones de Ingeniería en Software** desarrollamos soluciones tecnológicas a la medida para empresas de cualquier giro.
-
-### Nuestros servicios
-
-🏥 Sistemas para hospitales
-
-🛒 Comercio electrónico
-
-🏢 ERP Empresarial
-
-📦 Inventarios
-
-📅 Sistemas de citas
-
-📊 Dashboards
-
-📱 Aplicaciones Web
-
-🤖 Automatización con IA
-
-☁ Sistemas en la nube
-
----
-
-# 📞 Contacto
-
-## AG Soluciones de Ingeniería en Software
-
-🌐 https://agsolucionessoft.com.mx
-
-📧 contacto@agsolucionessoft.com.mx
-
-📱 WhatsApp
-
-**+52 56 3837 0500**
-
----
-
-# ⭐ ¿Te gustó este proyecto?
-
-Si este proyecto te resultó interesante, puedes darle una ⭐ en GitHub.
-
-También puedes contactarnos para desarrollar una solución personalizada para tu empresa.
-
-# "Transformamos ideas en soluciones tecnológicas."
+Este proyecto forma parte del portafolio de **AG Soluciones**, enfocado en el desarrollo de sistemas de gestión a la medida (ventas, inventario, facturación y más) para pequeñas y medianas empresas. ¿Te interesa un sistema como este para tu negocio? Contáctame para platicar tu proyecto.
