@@ -2,7 +2,7 @@
 
 Proyecto de portafolio desarrollado por **AG Soluciones**. Es un ERP empresarial de demostración, 100% funcional en el navegador, pensado para mostrar capacidad de diseño y desarrollo de sistemas de gestión a clientes potenciales.
 
-**[Ver demo en vivo →](#)** *(pega aquí tu enlace de GitHub Pages una vez publicado)*
+**[Ver demo en vivo →](#)** *(https://github.com/AGSoluciones-SOF/ERP-ventas-inventario-facturaci-n/settings/pages)*
 
 ![Estado](https://img.shields.io/badge/estado-demo funcional-2F6F4E)
 ![Licencia](https://img.shields.io/badge/uso-portafolio-C9A227)
