@@ -7,6 +7,15 @@ Proyecto de portafolio desarrollado por **AG Soluciones**. Es un ERP empresarial
 ![Estado](https://img.shields.io/badge/estado-demo funcional-2F6F4E)
 ![Licencia](https://img.shields.io/badge/uso-portafolio-C9A227)
 
+
+## 🚀 Solicita una demostración
+
+📱 WhatsApp: +52 56 3837 0500
+
+🌐 https://agsolucionessoft.com.mx
+
+📧 contacto@agsolucionessoft.com.mx
+
 ## Vista general
 
 Folio ERP simula la operación diaria de una pequeña o mediana empresa: registrar ventas, controlar inventario y generar facturas con folio y estado, todo desde un panel con diseño propio (paleta verde ledger + acentos en latón, tipografía Space Grotesk / Inter / IBM Plex Mono).
